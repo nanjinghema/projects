@@ -1,0 +1,40 @@
+<template>
+  <div id="app">
+    <ul>
+      <li v-for='number in numbers' :key='number'>{{ number }}</li>
+    </ul>
+    <form @submit.prevent='addNumber'>
+      <input type='text' v-model='newNumber'>
+      <button type='submit'>Add another number</button>
+    </form>
+  </div>
+</template>
+<script>
+
+	export default {
+	  name: 'app',
+	  methods: {
+	    addNumber() {
+	      const num = +this.newNumber;
+	      if (typeof num === 'number' && !isNaN(num)) {
+	        this.numbers.push(num);
+	      }
+	    }
+	  },
+	  data() {
+	    return {
+	      newNumber: null,
+	      numbers: [1, 23, 52, 46]
+	    };
+	  }
+	}
+</script>
+<style>
+ul {
+  padding: 0;
+  li {
+    list-style-type: none;
+    color: blue;
+  }
+}
+</style>

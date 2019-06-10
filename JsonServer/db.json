@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "name": "Helly",
+      "phone": "333-444-55511",
+      "email": "Helly@gmail.com",
+      "id": 1,
+      "age": 30,
+      "companyId": 1
+    },
+    {
+      "name": "bully",
+      "phone": "333-444-55522",
+      "email": "bully@gmail.com",
+      "id": 2,
+      "age": 33,
+      "companyId": 2
+    },
+    {
+      "name": "miste米斯特wu",
+      "phone": "333-444-55533",
+      "email": "eully@gmail.com",
+      "id": 3,
+      "age": 38,
+      "companyId": 3
+    },
+    {
+      "name": "sully",
+      "phone": "333-444-55544",
+      "email": "sully@gmail.com",
+      "id": 4,
+      "age": 44,
+      "companyId": 3
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "description": "Apple is good"
+    },
+    {
+      "id": 2,
+      "name": "Microsoft",
+      "description": "Microsoft is good"
+    },
+    {
+      "id": 3,
+      "name": "Google",
+      "description": "Google is good"
+    }
+  ]
+}
